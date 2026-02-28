@@ -38,7 +38,7 @@ public class FloatingIconService extends Service {
         floatingIcon.setElevation(10f);
 
         // Set size to a standard app icon size (around 60dp)
-        int iconSize = (int) (10 * getResources().getDisplayMetrics().density);
+        int iconSize = (int) (30 * getResources().getDisplayMetrics().density);
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             iconParams = new WindowManager.LayoutParams(
@@ -133,4 +133,5 @@ public class FloatingIconService extends Service {
         super.onDestroy();
         if (floatingIcon != null) windowManager.removeView(floatingIcon);
     }
+
 }
