@@ -443,7 +443,7 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
                     }
                 });
                 androidx.biometric.BiometricPrompt.PromptInfo promptInfo = new androidx.biometric.BiometricPrompt.PromptInfo.Builder()
-                        .setTitle("Unlock LITV")
+                        .setTitle("Unlock ")
                         .setAllowedAuthenticators(androidx.biometric.BiometricManager.Authenticators.BIOMETRIC_STRONG | androidx.biometric.BiometricManager.Authenticators.DEVICE_CREDENTIAL)
                         .build();
                 biometricPrompt.authenticate(promptInfo);
